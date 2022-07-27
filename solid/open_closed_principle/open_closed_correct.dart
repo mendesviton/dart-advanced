@@ -10,12 +10,12 @@ void main() {
 }
 
 abstract class Remuneravel {
-  void remuneracao();
+  void pagarSalario();
 }
 
 class ContratoClt implements Remuneravel {
   @override
-  void remuneracao() {
+  void pagarSalario() {
     print('Pagamento do tipo clt');
     //...
   }
@@ -23,7 +23,7 @@ class ContratoClt implements Remuneravel {
 
 class ContratoPj implements Remuneravel {
   @override
-  void remuneracao() {
+  void pagarSalario() {
     print('Pagamento do tipo PJ');
     // ...
   }
@@ -31,15 +31,15 @@ class ContratoPj implements Remuneravel {
 
 class ContratoMenorAprendiz implements Remuneravel {
   @override
-  void remuneracao() {
-    print('Pagando o jovem aprendiz');
+  void pagarSalario() {
+    print('Pagando menor aprendiz');
   }
 
 }
 
 class Estagio implements Remuneravel {
   @override
-  void remuneracao() {
+  void pagarSalario() {
     print('Pagamento de bolsa de estudo');
     //...
   }
@@ -49,6 +49,6 @@ class FolhaDePagamento {
   double? saldo;
 
   void calcular(Remuneravel funcionario) {
-    funcionario.remuneracao();
+    funcionario.pagarSalario();
   }
 }

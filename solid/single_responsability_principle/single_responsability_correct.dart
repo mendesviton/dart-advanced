@@ -19,5 +19,5 @@ class OrderViewer {
 
 class Cart {
   void getCart() {}
-  void removeCart() {}
+  static void removeCart() {}
 }

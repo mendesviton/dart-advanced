@@ -10,5 +10,5 @@ class Order {
   void update() {}
   void delete() {}
   void getCart() {}
-  void removeCard() {}
+  void removeCart() {}
 }

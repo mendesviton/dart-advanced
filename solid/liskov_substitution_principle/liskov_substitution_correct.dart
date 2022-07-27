@@ -2,8 +2,8 @@ void main() {
   Pessoa pessoa1 = Pessoa();
   Cliente cliente1 = Cliente();
 
-  void imprimeNome(Pessoa objeto) {
-    return objeto.getNome();
+  void imprimeNome(Pessoa pessoa) {
+    return pessoa.getNome();
   }
 
   imprimeNome(pessoa1); // Meu nome é ClassA
@@ -17,7 +17,7 @@ class Pessoa {
   }
 }
 
-// Cliente é SubClasse
+// Cliente é SUBCLASSE
 class Cliente extends Pessoa {
   void getCpfCliente() {
     print('OPAdokaowda');

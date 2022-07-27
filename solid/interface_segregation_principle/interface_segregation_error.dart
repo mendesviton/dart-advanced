@@ -30,7 +30,7 @@ class Pinguim implements Aves {
   // A Interface Aves está forçando a Classe Pinguim a implementar esse método.
   // Isso viola o príncipio ISP
   @override
-  void voar($altitude) {
+  void voar(altitude) {
     //Não faz nada...  Pinguins são aves que não voam!
   }
 

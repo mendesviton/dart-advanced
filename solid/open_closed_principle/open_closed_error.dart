@@ -4,6 +4,10 @@ class ContratoClt {
   }
 }
 
+class ContratoPj {
+  void salario() {}
+}
+
 class Estagio {
   void bolsaAuxilio() {
     //...

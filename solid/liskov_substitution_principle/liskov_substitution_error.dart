@@ -2,20 +2,28 @@ void main() {
   MusicPlay musicPlay = MusicPlay();
   Mp3MusicPlay mp3musicPlay = Mp3MusicPlay();
 
-  musicPlay.play('mp3');
-  mp3musicPlay.play('mp4');
+  void tocar(MusicPlay musicPlay) {
+    musicPlay.play('mp4');
+  }
+
+  // tocar(musicPlay);
+  tocar(mp3musicPlay);
 }
 
-// Lançando uma exceção inesperada...
+// SuperClasse
 class MusicPlay {
   void play(fileExtension) {
+    print('Tocando a música que tem extensão $fileExtension');
     // toca a música
   }
 }
 
+// SubClasse
 class Mp3MusicPlay extends MusicPlay {
   void play(fileExtension) {
-   
+    if (fileExtension != 'mp3') {
+      throw Exception();
+    }
   }
 }
 

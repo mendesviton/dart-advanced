@@ -1,18 +1,18 @@
 abstract class Aves {
-  void setLocalizacao($longitude, $latitude);
+  void setLocalizacao(longitude, latitude);
   void renderizar();
 }
 
 abstract class AvesQueVoam extends Aves {
-  void voar($altitude);
+  void voar(altitude);
 }
 
 class Papagaio implements AvesQueVoam {
-  void setLocalizacao($longitude, $latitude) {
+  void setLocalizacao(longitude, latitude) {
     //Faz alguma coisa
   }
 
-  void voar($altitude) {
+  void voar(altitude) {
     //Faz alguma coisa
   }
 
@@ -22,7 +22,7 @@ class Papagaio implements AvesQueVoam {
 }
 
 class Pinguim implements Aves {
-  void setLocalizacao($longitude, $latitude) {
+  void setLocalizacao(longitude, latitude) {
     //Faz alguma coisa
   }
 

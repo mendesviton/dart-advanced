@@ -1,8 +1,11 @@
 void main() {
   MySQLConnection mySQLConnection = MySQLConnection();
   OracleConnection oracleConnection = OracleConnection();
+  FirebaseConnection firebaseConnection = FirebaseConnection();
 
-  PasswordReminder passwordReminder = PasswordReminder(mySQLConnection);
+  PasswordReminder passwordReminder0 = PasswordReminder(mySQLConnection);
+  PasswordReminder passwordReminder1 = PasswordReminder(oracleConnection);
+  PasswordReminder passwordReminder2 = PasswordReminder(firebaseConnection);
 }
 
 abstract class DBConnectionInterface {
@@ -10,6 +13,7 @@ abstract class DBConnectionInterface {
 }
 
 class MySQLConnection implements DBConnectionInterface {
+  @override
   void connect() {
     // ...
   }
@@ -17,10 +21,13 @@ class MySQLConnection implements DBConnectionInterface {
 
 class FirebaseConnection implements DBConnectionInterface {
   @override
-  void connect() {}
+  void connect() {
+    // TODO: implement connect
+  }
 }
 
 class OracleConnection implements DBConnectionInterface {
+  @override
   void connect() {
     // ...
   }
